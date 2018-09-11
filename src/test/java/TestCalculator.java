@@ -57,4 +57,10 @@ public class TestCalculator {
         Assert.assertFalse(true);
     }
 
+    @Test
+    public void TestSuccess()
+    {
+        Assert.assertTrue(true);
+    }
+
 }
