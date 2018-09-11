@@ -35,7 +35,7 @@ public class TestCalculator {
         //On attend l'exception
     }
     // 3. Cas invalide hors classe d'équivalence integer par valeur min
-    //on tente de faire une somme qui dépasse 32 bit
+    //on tente de faire une soustraction qui dépasse 32 bit
     //on attend un message d'erreur type exception en sortie
     @Test (expected = IndexOutOfBoundsException.class)
     public void testMin()
@@ -49,6 +49,12 @@ public class TestCalculator {
 
         //Assert = Vérifier
         //On attend l'exception
+    }
+    @Test
+    public void testfail()
+    {
+        // renvoie fail
+        Assert.assertFalse(true);
     }
 
 }
